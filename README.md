@@ -1,7 +1,7 @@
 # Movehome_db
 This refers to the scenario of MOVEHOME, a fictional real estate group consisting of estate agents. The group is interested in creating a database or information system to aid its operations.
 
-##Scenario
+## Scenario
 
 MOVEHOME is a network of independent estate agents in the UK that serves as a single online platform for advertising and marketing properties for sale or rent. The primary goal of MOVEHOME is to connect property owners/landlords with potential buyers or tenants. The platform's clients include landlords, prospective buyers, and tenants. Landlords register their properties for sale or rent at individual estate agents. When a customer expresses interest in a property, the estate agent responsible for that property arranges a viewing with the landlord. The local branch of the estate agent communicates with the landlord and potential buyers or tenants to confirm the viewing.
 
