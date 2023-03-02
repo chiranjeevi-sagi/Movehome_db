@@ -1,0 +1,40 @@
+db.Customer.find({_id: "C1"})
+
+db.Customer.find({name: /^B/}).pretty()
+
+// join queries
+
+db.Property.aggregate([
+    {
+        $lookup:{
+            from: "Address",
+            localField: "add_id",
+            foreignField: "_id",
+            as: "Address"
+        }
+    },
+    {
+        $lookup:{
+            from: "Customer",
+            localField: "landlord",
+            foreignField: "_id",
+            as: "Landlord"
+        }
+    },
+
+    {$limit: 1}
+]).pretty()
+
+
+db.createView(
+"Prop_Address",
+"Property",[
+    {$lookup:{
+        from: "Address",
+        localField: "add_id",
+        foreignField: "_id",
+        as: "Address"
+    }}
+])
+
+db.Prop_Address.find({prop_status: "for sale"},{prop_name: 1, prop_status: 1, "Address.Locality": 1}).pretty()
