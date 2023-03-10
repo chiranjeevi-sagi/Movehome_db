@@ -10,3 +10,8 @@ The system has information on each estate agent's branch offices, branch staff, 
 When a customer registers with MOVEHOME, they receive a unique code, and the system records their name, address, date of birth, gender, and contact details. When a property is marketed, the system assigns a unique ID and records its address, location, description, accommodation details (room sizes and descriptions), rental demand or asking price, type, number of rooms, etc.
 
 When a viewing is scheduled for a property, the system records information about the customer who will be viewing the property, the date and time of the viewing, and any comments the customer makes during or after the visit. For property sales, the system records information about the customer who purchased the property, the selling price, stamp duty, and commission paid. For property rentals, the system records information about the rented property, the monthly rent, advance payment, commission, landlord and tenant information, date of tenancy commencement, and date of tenancy termination.
+
+## Implemented Database Models:
+  1. Relational Model - Oracle SQL
+  2. Object Relational Model - PL SQL
+  3. Document Model - Mongo DB
